@@ -5,6 +5,10 @@ import Footer from "./components/Footer.jsx";
 import {useState} from "react";
 import {navItems} from "./utils/constants.js";
 
+const handleEmailClick = () => {
+    window.location.href = "mailto:isnovitskiy@gmail.com?subject=Hello%20Igor!";
+};
+
 function App() {
     const [page, setPage] = useState(navItems[0]);
 
@@ -12,7 +16,7 @@ function App() {
         <div className="container-fluid">
             <Header changePage={setPage}/>
             <Main page={page}/>
-            <Footer/>
+            <Footer onEmailClick={handleEmailClick} />
         </div>
     )
 }

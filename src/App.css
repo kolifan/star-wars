@@ -1,3 +1,7 @@
+body {
+    padding-top: 56px; /* стандартная высота navbar bootstrap */
+}
+
 header, footer {
     background-color: var(--bg-color-grey);
 }
